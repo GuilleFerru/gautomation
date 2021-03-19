@@ -1,0 +1,77 @@
+/* MOBILE */
+@media only screen and (max-width: 1300px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header__logo img {
+        display: none;
+    }
+
+    .header__logo {
+        background: $primary
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .header__form {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__banner {
+        width: 100vw;
+        height: 50vh;
+        top: 0;
+    }
+
+    .header__banner h1 {
+        font-size: 2em;
+    }
+
+    .header__banner h2 {
+        font-size: 1em;
+    }
+
+    #queHacemos .img img {
+        width: 50vh;
+    }
+
+    section#nosotros {
+        padding-top: 0;
+    }
+
+    .containerNosotros {
+        flex-wrap: wrap;
+    }
+
+    article#certificaciones {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sectionContainer {
+        flex-wrap: wrap;
+    }
+
+    .button__whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        right: 10px;
+        line-height: 47px;
+    }
+
+    .button__whatsapp img {
+        height: 30px;
+    }
+
+    .footer__copyright{
+        display: none;
+    }
+}

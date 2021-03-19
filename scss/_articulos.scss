@@ -1,0 +1,23 @@
+.articulo__next {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    a {
+        color: $primary;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 700;
+    }
+}
+
+.articulo__next--izq {
+    justify-content: flex-start;
+}
+
+.articulo__next--derecha {
+    justify-content: flex-end;
+}

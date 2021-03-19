@@ -1,0 +1,353 @@
+
+.container__own {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+
+}
+
+.fixedContainer {
+    display: grid;
+    grid-template-areas:
+        "logo burger"
+        "nav nav";
+    grid-template-columns: 1fr 1fr;
+    background: transparent;
+    border-bottom: 1px rgba(129, 124, 124, 0.2) inset; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    transition:500ms ease;
+}
+
+
+.fixedContainer.scrolled{
+    background:$white;
+    
+}
+
+.sectionContainer {
+    grid-area: sectionContainer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sectionContainer__item {
+    margin: 2em;
+}
+
+
+/* MAIN */
+
+
+main {
+    grid-area: main;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "nosotros nosotros"
+        "servicios servicios"
+        "trabajos trabajos"
+        "clientes clientes"
+        "articulos articulos"
+        "contactos contactos";
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Nosotros*/
+section#nosotros {
+    grid-area: nosotros;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "sectionContainer sectionContainer"
+        "containerCertificados containerCertificados";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    padding-top: 107px;
+}
+
+#quienesSomos .texto {
+    text-align: center;
+}
+
+#queHacemos .img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vh;
+}
+
+.containerCertificados {
+    grid-area: containerCertificados;
+}
+
+article#certificaciones {
+    grid-area: certificaciones;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#certificaciones .texto {
+    width: 60em;
+}
+
+#certificaciones .img {
+    flex-grow: 2;
+}
+
+#certificaciones .img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+}
+
+#certificaciones .texto h2 {
+    text-align: center;
+}
+
+
+/*SERVICIOS*/
+
+section#servicios,
+section#articulos {
+    grid-area: servicios;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "sectionContainer sectionContainer"
+        "link link";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    padding-top: 140px;
+}
+
+.flip {
+    background-color: transparent;
+    width: 230px;
+    height: 325px;
+    perspective: 1000px;
+}
+
+.flip__box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .flip__box {
+    transform: rotateY(180deg);
+}
+
+.flip__box--front,
+.flip__box--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.flip__box--back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%, #000000 100%);
+    color: $white;
+    transform: rotateY(180deg);
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+
+/* pagina Serivicios*/
+
+.container--padding{
+    padding-top: 107px;
+}
+
+.container--shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.container--shadow:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*  TRABAJOS   */
+
+section#trabajos {
+    grid-area: trabajos;
+    padding-top: 140px;
+}
+
+
+/* CLIENTES */
+
+section#clientes {
+    grid-area: clientes;
+    padding-top: 140px;
+}
+
+#clientes .sectionContainer {
+    /*background-color: aquamarine;*/
+    grid-area: sectionContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    
+}
+
+#clientes .sectionContainer .sectionContainer__item .texto {
+    /*background-color:bisque;*/
+    padding: 0;
+}
+
+/*ARTICULOS*/
+
+section#articulos {
+    grid-area: articulos;
+}
+
+.card {
+    height: 550px;
+    max-width: 390px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__image {
+    border-radius: 9px 9px 0 0;
+}
+
+.card__text {
+    padding: 2em;
+}
+
+.container__row--height{
+    height: 480px;
+    background: red;
+}
+
+.row__col--height{
+    max-height: 300px;
+    background: #20be6d;
+}
+
+/* CONTACTOS*/
+
+section#contactos {
+    /*background-color: lightblue;*/
+    grid-area: contactos;
+    padding-top: 140px;
+
+}
+
+#formContainer {
+    display: inline-block;
+    width: 50%;
+    font-family: monospace;
+    border-radius: 5px;
+}
+
+.formLabel {
+    margin: 10px 0px 10px 0px;
+}
+
+.inputForm {
+    border: #111 solid;
+}
+
+#textAreaForm {
+    width: 100%;
+    height: 150px;
+    border: #111 solid;
+    margin: 10px 0px 0px 0px;
+    resize: none;
+
+}
+
+#newsletter {
+    margin: 10px 0px 10px 0px;
+    display: block;
+}
+
+input[type=text],
+[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: $btn;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: $primary;
+    grid-area: footer;
+}
+
+.burger {
+    grid-area: burger;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button__whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 7vh;
+    right: 20px;
+    z-index: 1;
+    line-height: 55px;
+    transition: 0.3s;
+}
+
+.button__whatsapp:hover {
+    
+    transform: scale(0.9);
+}
+
+.button__whatsapp--mt {
+    margin-top: 16px;
+}
+
