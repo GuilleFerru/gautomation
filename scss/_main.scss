@@ -1,5 +1,9 @@
 
-.container__own {
+.container-mt{
+    padding-top: 107px;
+}
+
+/*.container__own {
     display: grid;
     grid-template-areas:
         "header header"
@@ -8,7 +12,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 0;
 
-}
+}*/
 
 .fixedContainer {
     display: grid;
@@ -31,7 +35,7 @@
     
 }
 
-.sectionContainer {
+/*.sectionContainer {
     grid-area: sectionContainer;
     display: flex;
     justify-content: space-evenly;
@@ -41,12 +45,12 @@
 .sectionContainer__item {
     margin: 2em;
 }
-
+*/
 
 /* MAIN */
 
 
-main {
+/*main {
     grid-area: main;
 }
 
@@ -60,10 +64,10 @@ main {
         "articulos articulos"
         "contactos contactos";
     grid-template-columns: 1fr 1fr;
-}
+}*/
 
 /*Nosotros*/
-section#nosotros {
+/*section#nosotros {
     grid-area: nosotros;
     display: grid;
     grid-template-areas:
@@ -111,16 +115,16 @@ article#certificaciones {
     margin-left: auto;
     margin-right: auto;
     width: 50vh;
-}
+}*/
 
-#certificaciones .texto h2 {
+/*#certificaciones .texto h2 {
     text-align: center;
-}
+}*/
 
 
 /*SERVICIOS*/
 
-section#servicios,
+/*section#servicios,
 section#articulos {
     grid-area: servicios;
     display: grid;
@@ -132,7 +136,7 @@ section#articulos {
     row-gap: 0.5rem;
     column-gap: 0.5rem;
     padding-top: 140px;
-}
+}*/
 
 .flip {
     background-color: transparent;
@@ -260,8 +264,8 @@ section#articulos {
 
 /* CONTACTOS*/
 
-section#contactos {
-    /*background-color: lightblue;*/
+/*section#contactos {
+    
     grid-area: contactos;
     padding-top: 140px;
 
@@ -313,7 +317,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+}*/
 
 footer {
     background-color: $primary;

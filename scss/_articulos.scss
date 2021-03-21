@@ -1,3 +1,9 @@
+.articulo--fondo{
+    background-image: none;
+    background-color: $white;
+    
+}
+
 .articulo__next {
     display: flex;
     align-items: center;
@@ -21,3 +27,4 @@
 .articulo__next--derecha {
     justify-content: flex-end;
 }
+

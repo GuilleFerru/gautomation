@@ -15,6 +15,9 @@ body {
     font-size: 1.8rem;
     letter-spacing: 0.0425em;
     /*color: rgba(3, 26, 39, 0.877)*/
+    background-image: url("../media/fondo-web.png");
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 @for $i from 1 through 6{
@@ -23,13 +26,12 @@ body {
     }
 }
 
-.titulo__h3{
+.titulo__h{
     border-bottom: 3px solid $profinet;
     span{
         background: $profinet;
         color: $white;
         padding: 0px 10px 0 10px;
-
     }
 }
 
@@ -82,6 +84,7 @@ div.titulos {
 
 .texto {
     padding: 2em;
+    font-weight: 600;
     p {
         padding: 1em 1em 1em 0;
         text-align: justify;
