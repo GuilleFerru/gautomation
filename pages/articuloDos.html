@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este es el sitio web de mi empresa de automatizacion industrial donde encontraras servicios de PLC, DCS, Ingenieria y más">
+    <meta name="description"
+        content="Este es el sitio web de mi empresa de automatizacion industrial donde encontraras servicios de PLC, DCS, Ingenieria y más">
     <meta name="keywords" content="HTML, JS, META, Automation, Automatizacion, PLC, DCS, Ingenieria, IOT, IIOT, IT, OT">
     <title>GF Automation: Articulo Profinet</title>
     <!--Logo browser-->
@@ -62,84 +63,196 @@
         <main id="articuloDos">
             <div class="container mt-4 mt-lg-4 container--padding">
                 <div class="row aling-items-center no-gutters m-5 m-lg-5">
-                    <div class="col-xl-7 col-lg-7 text-justify ">
+                    <div class="col-xl-7 col-lg-7 text-justify articulo--fondo">
                         <div class="text-center overflow-hidden mb-2">
-                            <img src="../media/articuloUno-md.jpg" alt="Articulos" class="img-fluid w-100">
+                            <img src="../media/articuloDos-md.jpg" alt="Articulos" class="img-fluid w-100">
                         </div>
-                        <h1 class="text-left">
-                            <a href="articuloUno.html" class="header__nav--scroll">PROFINET EN PLANTAS DE PROCESO A
-                                NIVEL DE CAMPO (PROFINET PA)</a>
+                        <h1 class="">
+                            <a href="articuloDos.html" class="header__nav--scroll">Cableado PROFINET: Visión general y
+                                consideraciones para implementación.</a>
                         </h1>
-                        <small>
-                            <span class="posted-on"> <a href="articuloUno.html" title="7:06 pm" rel="bookmark"><i
-                                        class="fa fa-calendar-o"></i>
-                                    <time datetime="2021-03-21T19:06:52+00:00"> 03 marzo, 2021</time></span>
-                            <span> - <i class="fa fa-user"></i> <a href="#top" title="comunicacion"></a>
-                                comunicacion</a></span>
-                            <span class="comments">- <a href="#top"><i class="fa fa-comment"></i> 0
-                                    comentarios</a></span>
+                        <small class="text-muted">
+                            <span> 
+                                <a href="articuloDos.html" title="7:06 pm" rel="bookmark" class="text-muted"><i class="fa fa-calendar-o"></i>
+                                <time datetime="2021-02-28T19:06:52+00:00"> 28 febrero, 2021</time>
+                            </span>
+                            <span>
+                                - <i class="fa fa-user"></i> <a href="#top" title="comunicacion" class="text-muted">comunicacion</a>
+                            </span>
+                            <span>
+                                - <a href="#top" class="text-muted"><i class="fa fa-comment"></i> 0 comentarios</a>
+                            </span>
                         </small>
+                        </p>
                         <hr>
-                        <div class="container">
-                            <p><strong>A PRUEBA DE FUTURO – PODEROSO – ORIENTADO AL USUARIO</strong></p>
-                            <p>La <strong>digitalización</strong> en todos los
-                                procesos industriales ofrece la posibilidad de responder en forma
-                                más <strong>rápida y efectiva</strong> a los cambios que el mercado requiere.
-                                Esto involucra tanto los niveles inferiores de control, como los niveles superiores de
-                                toma y análisis de datos que se convierten en información útil. Este esquema
-                                requiere <strong>tecnologías de comunicaciones</strong> más potentes, con
-                                mejor performance y fundamentalmente mayor integración. Esto es posible únicamente con
-                                el uso de buses basados en <strong>Ethernet Industrial</strong>. Todos los
-                                fabricantes de componentes trabajan en forma conjunta con los usuarios para la adopción
-                                de esta tecnología con las particularidades que la automatización de procesos requiere.
-                            </p>
-                            <p><em>¿Qué se debe </em><strong><em>satisfacer</em></strong><em> en una planta de
-                                    procesos?</em></p>
-                            <p>Debemos ser capaces de cumplir con todos estos requisitos: </p>
-                            <div class="container ml-4">
-                                <ul>
-                                    <li><strong>Redundancia:</strong> en muchas plantas es critica garantizar la
-                                        continuidad del proceso, para lograr esto se deben implementar sistemas de
-                                        control
-                                        de alta disponibilidad, lo cual implica la capacidad de poder comunicar el nivel
-                                        de
-                                        campo con sistemas de este tipo.</li>
-                                    <li><strong>Reemplazo y reconfiguración en caliente:</strong> el cambio o agregado
-                                        de uno o varios dispositivos de campo debe ser capaz de realizarse sin afectar a
-                                        la
-                                        continuidad del proceso.</li>
-                                    <li><strong>Áreas peligrosas:</strong> casi todas las plantas de procesos manejan
-                                        sustancias (materias primas o productos elaborados) que implican riesgos debido
-                                        a la
-                                        posibilidad de provocar una explosión, con los consiguientes daños a personas,
-                                        medioambiente o instalaciones, en ese orden.</li>
-                                </ul>
+                        <div class="texto">
+                            <h3><strong>Introducción</strong></h3>
+                            <p>Las redes PROFINET están construidas en base al estándar
+                                Ethernet&nbsp;<a href="http://www.ieee802.org/3/" target="_blank"
+                                    rel="nofollow noopener">IEEE 802.3</a>. Aun cuando los puntos de acceso inalámbricos
+                                están ganando popularidad, la mayor parte de las conexiones de red actuales usan cables
+                                de cobre y requieren del correspondiente cableado. Los fabricantes de cable PROFINET
+                                ofrecen un amplio rango de tipos y clases de cables adecuados para diferentes
+                                aplicaciones, incluyendo aquellas que requieren propiedades especiales. Estos cables
+                                están disponibles en dos clases: cobre y fibras ópticas. Este documento presenta una
+                                visión general de ambas clases, su uso adecuado y su implementación.</p>
+                            <h3><strong>Cables de cobre PROFINET</strong></h3>
+                            <p>Un cable PROFINET típico tiene un núcleo mallado de 4 hilos
+                                de cobre (star quad), mientras que los cables de 8 hilos están especificados para uso en
+                                aplicaciones de alta velocidad de transferencia de datos (1000 Mbit/s). Las distintas
+                                clases de cables varían en la estructura de los hilos (núcleo sólido, cable multifilar
+                                trenzado para aplicaciones fijas/flexibles y en diferentes combinaciones de funda y tipo
+                                de construcción). La siguiente presenta una lista de los requerimientos mínimos para una
+                                capa física basada en cables de cobre, si bien un nodo PROFINET particular puede
+                                implementar protocolos adicionales los cuales pueden requerir características
+                                adicionales.</p>
+                            <div class="mb-3">
+                                <img src="../media/articuloDos__capa.png" class="img-fluid mx-auto d-block">
                             </div>
-                            <p>Desde PROFIBUS &amp; PROFINET INTERNATIONAL se trabaja desde
-                                hace tiempo en la especificación de un <strong>perfil especifico para
-                                    automatización de procesos (PA),</strong> para el bus de campo PROFINET. Hoy
-                                contamos con una clase especial de dispositivos que lo deben cumplir, llamada
-                                conformance class B PA (CC B PA). Esto en conjunto con la reciente publicación del
-                                perfil 4.0 (PA Device profile 4.0) el cual hace foco en el uso en PROFINET con nuevas
-                                funcionalidades. También es parte de esto el desarrollo de una capa física avanzada
-                                (Advanced physical layer APL) para su uso en redes Ethernet Industrial, así como también
-                                la integración con FDI.</p>
-                            <p>La adopción de estas nuevas tecnologías les permite a las
-                                industrias mantenerse alineados con las nuevas tecnologías y
-                                lograr <strong>beneficios importantes</strong> en todas las fases del ciclo de
-                                vida de la planta.</p>
-                            <p>Uno de los mayores desafíos es lograr estos beneficios
-                                tratando de preservar la inversión realizada logrando que los costos de implementación
-                                sean lo mas bajos posibles. Desde nuestros <strong>Centro de
-                                    Competencia</strong> podemos <strong>ayudarlos</strong> a lograrlo,
-                                dándole todo el soporte necesario ya que contamos con
-                                la <strong>certificación</strong> que nos acredita como el <strong>único
-                                    de habla hispana </strong>en ofrecerlo.</p>
-                            <p>Basado en el articulo “PROFINET with PA Profile in Process
-                                Industry Plants”, de Karl Büttner y Werner Längin.</p>
-                            <p><strong>“Integrando PA en PROFINET”</strong></p>
-                            <p><strong>Hernán Bertotto</strong> – by AUTEX-OPEN</p>
+                            <h3><strong>Característica de capa física</strong></h3>
+                            <p>Los núcleos del cable siempre están codificados por color.
+                                En un cable de 4 hilos, el par 1 está formado por el hilo amarillo y el naranja,
+                                mientras que el par 2 está formado por el hilo azul y el blanco. La figura 1 muestra un
+                                esquema de cable PROFINET típico, con los núcleos en cada par de hilos dispuestos de
+                                manera diametralmente opuesta dentro del cable.</p>
+                            <p>Los cables PROFINET de 8 hilos consisten en 4 pares de
+                                hilos: verde, azul, naranja y marrón más un cable blanco correspondiente para cada uno.
+                            </p>
+                            <p>Al igual que en las aplicaciones Ethernet estándar, la
+                                distancia máxima posible entre dos puntos de comunicación es de 100 m si se usa cable de
+                                cobre</p>
+                            <div class="mb-3">
+                                <img src="../media/articuloDos__cable.png" class="img-fluid mx-auto d-block">
+                            </div>
+                            <h3><strong>Tipos de cable de cobre PROFINET</strong></h3>
+                            <p>Existen tres tipos de cable de cobre PROFINET principales,
+                                estando diferenciados principalmente por la aplicación para la que fueron diseñados:</p>
+                            <p><strong>Tipo A:</strong>&nbsp;Cables diseñados para
+                                instalaciones fijas, no deben estar sujetos a movimientos después de la instalación.</p>
+                            <p><strong>Tipo B:</strong>&nbsp;Cables diseñados para
+                                instalaciones flexibles. Este tipo de cable puede estar expuesto a movimientos
+                                ocasionales o vibración.</p>
+                            <p><strong>Tipo C:</strong>&nbsp;Cables diseñados para
+                                aplicaciones especiales. Los cables Tipo C pueden soportar ambientes dinámicos y con
+                                movimiento, como por ejemplo máquinas rotatorias o aplicaciones con porta cables
+                                flexibles.</p>
+                            <p>Adicionalmente, se dispone de diversas clases de cables
+                                especiales para PROFINET. Los cables especiales más comunes se listan a continuación
+                                junto con su respectiva aplicación.</p>
+                            <p><strong>Cables PE:</strong>&nbsp;Áreas sometidas a humedad
+                                constante.</p>
+                            <p><strong>Cables enterrados:</strong>&nbsp;Comunicación
+                                subterránea</p>
+                            <p><strong>Cables con funda no corrosiva retardante de
+                                    llama:</strong>&nbsp;Adecuado para instalaciones en áreas sujetas a regulaciones de
+                                seguridad o protección, por ejemplo, salones y espacios públicos</p>
+                            <p><strong>Cables de arrastre:</strong>&nbsp;Partes móviles en
+                                máquinas</p>
+                            <p><strong>Cable tipo festón:</strong>&nbsp;Grúas y sistemas de
+                                cableado tipo festón</p>
+                            <p><strong>Cable para aplicaciones
+                                    navales:</strong>&nbsp;Aplicaciones en barcos y plataformas offshore</p>
+                            <p>
+                            </p>
+                            <h3><strong>Los cables de fibra óptica PROFINET</strong></h3>
+                            <p>Los cables de fibra óptica ofrecen beneficios específicos
+                                sobre el cobre. Generalmente se emplean en áreas con presencia de interferencias
+                                electromagnéticas o diferencias de potencial de puesta a tierra significativas.</p>
+                            <p>Las conexiones realizadas mediante fibra óptica pueden
+                                eliminar completamente los problemas causados por interferencia electromagnética y el
+                                flujo de corrientes de ecualización de potencial por el mallado de los cables de cobre.
+                            </p>
+                            <blockquote>
+                                <p>Algunos de los beneficios que ofrecen las fibras ópticas:</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>Los cables de fibra óptica permiten cubrir distancias más grandes que los cables de
+                                    cobre (hasta dos órdenes de magnitud).</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>Los cables de fibra óptica permiten contar con aislación eléctrica total entre
+                                    diferentes áreas de una planta.</p>
+                            </blockquote>
+                            <blockquote>
+                                <p>Los cables de fibra óptica son totalmente inmunes a la interferencia
+                                    electromagnética.</p>
+                            </blockquote>
+                            <p>El esquema de la fibra óptica PROFINET correspondiente a la
+                                figura 2 muestra la estructura general del mismo, el cual consiste en dos cables
+                                paralelos. Los cables están listos para el armado directo de los conectores.</p>
+                            <p>El cable naranja cuenta con flechas direccionales impresas
+                                para facilitar la asignación de hilos a las conexiones de transmisión y recepción. Los
+                                requerimientos de las interfaces de fibra óptica son distintos a los de una interface de
+                                cobre. Se deben seguir los requerimientos del estándar correspondiente a la transmisión
+                                Full Duplex 100Base FX.</p>
+                            <div class="mb-3">
+                                <img src="../media/articuloDos__cable2.png" class="img-fluid mx-auto d-block">
+                            </div>
+                            <h3><strong>Tipos y parámetros de fibras ópticas PROFINET</strong></h3>
+                            <p>La selección de tipo de fibra óptica debe basarse en los
+                                requerimientos determinados por el proyecto de automatización. En general, existen dos
+                                tipos de cable de fibra óptica: Tipo B y Tipo C. El Tipo B está especificado para uso
+                                estacionario o flexible. El Tipo C está especificado para aplicaciones especiales, como
+                                por ejemplo aplicaciones con movimiento permanente, vibración y/o torsión.</p>
+                            <p>Existen cuatro clases diferentes de fibras ópticas usadas en PROFINET:</p>
+                            <p>Estas cuatro clases son: Fibra óptica de plástico (<strong>POF</strong>), fibra óptica de
+                                vidrio multi modo (<strong>multi-mode</strong>), fibra óptica de vidrio mono modo
+                                (<strong>single-mode</strong>), y fibra óptica de vidrio con funda plástica
+                                (fibra con cobertura de silicio (<strong>HCF</strong>) o fibra con cobertura plástica
+                                (<strong>PCF</strong>)).</p>
+                            <p>La siguiente tabla ofrece un resumen de los requerimientos:</p>
+                            <div class="mb-3">
+                                <img src="../media/articuloDos__fibra.png" class="img-fluid mx-auto d-block">
+                            </div>
+                            <h3><strong>Consideraciones para la instalación de cableado de
+                                    Fibra vs Cobre</strong></h3>
+                            <p>Los cables de cobre se empezaron a usar en el siglo 19, y su
+                                uso se difundió con el desarrollo de la industria de telecomunicaciones. Hoy en día, los
+                                cables de cobre siguen siendo la opción más común para uso en redes industriales, pero
+                                los cables de fibra óptica son la elección adecuada en determinadas aplicaciones.</p>
+                            <p>Los siguientes ítems deben tenerse en cuenta durante la selección.</p>
+                            <h3><strong>Distancia</strong></h3>
+                            <p>Dependiendo del medio ambiente presente en la planta, una
+                                red puede necesitar cableados sobre distancias cortas o largas entre las diferentes
+                                secciones de la planta. Puesto que los segmentos de cobre están limitados a 100 m, las
+                                distancias mayores pueden ser cubiertas añadiendo un switch. Los segmentos de fibra
+                                óptica pueden ser tendidos sobre distancias mayores, que pueden llegar hasta los 2 km
+                                mediante el uso de fibras ópticas multi modo.</p>
+                            <h3><strong>Costo</strong></h3>
+                            <p>El costo del cable varía en función del tipo y de las
+                                características especiales, pero el costo por metro no es el único factor a tener en
+                                cuenta. Durante la instalación, cada cable requiere equipamiento de testeo, conectores y
+                                adaptadores (debe tratarse de minimizar el número de transiciones entre distintos tipos
+                                de cableado). Asimismo, diferentes tipos de cables pueden requerir métodos de
+                                instalación y entrenamiento específicos.</p>
+                            <h3><strong>Medio ambiente</strong></h3>
+                            <p>El cobre y la fibra emplean distintos tipos de clasificación
+                                (Tipo A, Tipo B, y Tipo C) que permiten asegurar el funcionamiento apropiado y
+                                disminuyen el riesgo de fallas. Siempre debe elegirse el tipo adecuado en función del
+                                medio ambiente y del tipo de aplicación: instalaciones fijas, flexibles o dinámicas.</p>
+                            <h3><strong>Ancho de banda</strong></h3>
+                            <p>Aunque el cobre es el material adecuado para la mayoría de
+                                las aplicaciones, la fibra óptica generalmente ofrece un mayor ancho de banda. El ancho
+                                de banda también dependerá de los distintos tipos de cable utilizados. Inicialmente el
+                                cobre estaba limitado a 10 Mbps, pero en hoy en día generalmente ofrecen un ancho de
+                                banda de 1 Gigabit.</p>
+                            <h3><strong>Aplicaciones especiales</strong></h3>
+                            <p>En las secciones previas, hemos descrito cables para
+                                aplicaciones especiales. Las aplicaciones especiales más comunes se han enumerado
+                                anteriormente, pero no todas. Aunque algunas soluciones especializadas pueden estar
+                                dirigidas a nichos de mercado, otras están dirigidas a entornos de fabricación
+                                específicos.</p>
+                            <h3><strong>Conclusión</strong></h3>
+                            <p>PROFINET se basa en Ethernet estándar no modificada, lo que
+                                brinda la oportunidad de aprovechar las nuevas tecnologías, como las mejoras en la capa
+                                física. Los cables PROFINET de cobre y fibra tienen una clasificación específica para
+                                permitir el funcionamiento adecuado y grupos especiales para aplicaciones específicas.
+                                Dependiendo de la complejidad de la red, es posible que necesite cables de cobre y
+                                fibra, y además varios tipos de cada uno. Todos los cables PROFINET pueden interactuar
+                                sin problemas en una red y proporcionar beneficios adicionales gracias a sus múltiples
+                                funciones.</p>
                         </div>
+
                     </div>
                     <div class="col-xl-4 col-lg-4">
                         <div class="col-xl-12 col-lg-12">
@@ -176,8 +289,8 @@
                         <div class="articulo__next articulo__next--izq mb-2">
                             <a href="articuloUno.html#articuloUno" rel="next">
                                 <span class="">
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i> 
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i> 
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                                     <span>ANTERIOR</span>
                                 </span>
                             </a>
@@ -188,8 +301,8 @@
                             <a href="articuloTres.html#articuloTres" rel="next">
                                 <span class="">
                                     <span>SIGUIENTE</span>
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i> 
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i> 
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
@@ -231,10 +344,10 @@
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h36lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        integrity="sha384-B4gt1jrGC7Jh3AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="../js/scripts.js"></script>
 </body>
