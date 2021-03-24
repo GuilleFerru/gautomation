@@ -20,15 +20,16 @@ body {
     background-size: contain;
 }
 
-@for $i from 1 through 6{
-    h#{$i}{
+@for $i from 1 through 6 {
+    h#{$i} {
         font-weight: 600;
     }
 }
 
-.titulo__h{
+.titulo__h {
     border-bottom: 3px solid $profinet;
-    span{
+
+    span {
         background: $profinet;
         color: $white;
         padding: 0px 10px 0 10px;
@@ -37,7 +38,10 @@ body {
 
 a {
     cursor: pointer;
-    a:hover, a:focus, a:active {
+
+    a:hover,
+    a:focus,
+    a:active {
         text-decoration: none;
         color: inherit;
     }
@@ -59,6 +63,17 @@ a {
 
 .btn--container {
     margin-top: 1em;
+}
+
+.btn__articulo {
+    background: $profinet;
+    color: $white;
+
+    &--variante {
+        background: $white;
+        border: 1px solid $profinet;
+        color: $profinet;
+    }
 }
 
 .header__button:hover,
@@ -85,15 +100,17 @@ div.titulos {
 .texto {
     padding: 2em;
     font-weight: 600;
+
     p {
         padding: 1em 1em 1em 0;
         text-align: justify;
-    } 
+    }
 }
 
 .link {
     grid-area: link;
     text-align: center;
+
     a {
         background-color: transparent;
         color: $primary;
@@ -102,8 +119,12 @@ div.titulos {
 
 .shrink {
     transition: transform .3s;
+
     :hover {
         transform: scale(0.9);
     }
 }
 
+.carousel-inner img {
+    margin: auto;
+}

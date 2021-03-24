@@ -3,17 +3,6 @@
     padding-top: 107px;
 }
 
-/*.container__own {
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0;
-
-}*/
-
 .fixedContainer {
     display: grid;
     grid-template-areas:
@@ -29,114 +18,10 @@
     transition:500ms ease;
 }
 
-
 .fixedContainer.scrolled{
     background:$white;
     
 }
-
-/*.sectionContainer {
-    grid-area: sectionContainer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.sectionContainer__item {
-    margin: 2em;
-}
-*/
-
-/* MAIN */
-
-
-/*main {
-    grid-area: main;
-}
-
-.main {
-    display: grid;
-    grid-template-areas:
-        "nosotros nosotros"
-        "servicios servicios"
-        "trabajos trabajos"
-        "clientes clientes"
-        "articulos articulos"
-        "contactos contactos";
-    grid-template-columns: 1fr 1fr;
-}*/
-
-/*Nosotros*/
-/*section#nosotros {
-    grid-area: nosotros;
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
-        "sectionContainer sectionContainer"
-        "containerCertificados containerCertificados";
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-    padding-top: 107px;
-}
-
-#quienesSomos .texto {
-    text-align: center;
-}
-
-#queHacemos .img img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vh;
-}
-
-.containerCertificados {
-    grid-area: containerCertificados;
-}
-
-article#certificaciones {
-    grid-area: certificaciones;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#certificaciones .texto {
-    width: 60em;
-}
-
-#certificaciones .img {
-    flex-grow: 2;
-}
-
-#certificaciones .img img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vh;
-}*/
-
-/*#certificaciones .texto h2 {
-    text-align: center;
-}*/
-
-
-/*SERVICIOS*/
-
-/*section#servicios,
-section#articulos {
-    grid-area: servicios;
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
-        "sectionContainer sectionContainer"
-        "link link";
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.5rem;
-    column-gap: 0.5rem;
-    padding-top: 140px;
-}*/
 
 .flip {
     background-color: transparent;
@@ -167,7 +52,6 @@ section#articulos {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
 
 .flip__box--back {
     display: flex;
