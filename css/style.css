@@ -112,6 +112,9 @@ div.titulos {
 .carousel-inner img {
   margin: auto; }
 
+.borderUno {
+  border: 2px solid red; }
+
 /* CABECERA */
 header {
   grid-area: header; }
@@ -202,8 +205,15 @@ nav {
   align-items: center;
   padding: 10px; }
 
-.container-mt {
+.container__background {
+  background-image: url("../media/fondo-web.png");
+  background-repeat: repeat;
+  background-size: contain; }
+
+.container__padding, .container__padding--background {
   padding-top: 107px; }
+  .container__padding--background {
+    background: #FBFBFB; }
 
 .fixedContainer {
   display: grid;
@@ -277,16 +287,13 @@ section#clientes {
   padding-top: 140px; }
 
 #clientes .sectionContainer {
-  /*background-color: aquamarine;*/
   grid-area: sectionContainer;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /*flex-wrap: wrap;*/ }
+  align-items: center; }
 
 #clientes .sectionContainer .sectionContainer__item .texto {
-  /*background-color:bisque;*/
   padding: 0; }
 
 /*ARTICULOS*/
@@ -315,61 +322,6 @@ section#articulos {
   max-height: 300px;
   background: #20be6d; }
 
-/* CONTACTOS*/
-/*section#contactos {
-    
-    grid-area: contactos;
-    padding-top: 140px;
-
-}
-
-#formContainer {
-    display: inline-block;
-    width: 50%;
-    font-family: monospace;
-    border-radius: 5px;
-}
-
-.formLabel {
-    margin: 10px 0px 10px 0px;
-}
-
-.inputForm {
-    border: #111 solid;
-}
-
-#textAreaForm {
-    width: 100%;
-    height: 150px;
-    border: #111 solid;
-    margin: 10px 0px 0px 0px;
-    resize: none;
-
-}
-
-#newsletter {
-    margin: 10px 0px 10px 0px;
-    display: block;
-}
-
-input[type=text],
-[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: $btn;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}*/
 footer {
   background-color: #000000;
   grid-area: footer; }
