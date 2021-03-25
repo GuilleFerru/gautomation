@@ -206,16 +206,13 @@ nav {
   padding: 10px; }
 
 .container__background {
-  background-image: url("../media/fondo-web.png");
-  background-repeat: repeat;
-  background-size: contain; }
+  background-image: url("../media/fondo-web.png"); }
+
+.container__background--white {
+  background: #FBFBFB; }
 
 .container__padding {
   padding-top: 107px; }
-
-.container__padding--background {
-  padding-top: 107px;
-  background: #FBFBFB; }
 
 .fixedContainer {
   display: grid;
