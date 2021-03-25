@@ -210,10 +210,12 @@ nav {
   background-repeat: repeat;
   background-size: contain; }
 
-.container__padding, .container__padding--background {
+.container__padding {
   padding-top: 107px; }
-  .container__padding--background {
-    background: #FBFBFB; }
+
+.container__padding--background {
+  padding-top: 107px;
+  background: #FBFBFB; }
 
 .fixedContainer {
   display: grid;

@@ -6,11 +6,13 @@
 
 .container__padding {
     padding-top: 107px;
-    &--background {
-        @extend.container__padding;
-        background: $white;
-    }
 }
+
+.container__padding--background {
+    padding-top: 107px;
+    background: $white;
+}
+
 
 .fixedContainer {
     display: grid;
