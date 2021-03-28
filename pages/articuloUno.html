@@ -32,29 +32,30 @@
 <body>
     <div class="container__own">
         <header class="header" id="top">
-            <div class="fixedContainer ">
-                <div class="header__logo">
+            <div class="fixedContainer navbar navbar-expand-lg ">
+                
+                <div class="header__logo ">
                     <a class="navbar-brand header__logo--scroll" href="#top">GF AUTOMATION</a>
-
                 </div>
 
-                <div class="header__burger ">
-                    <img src="icons/burger.png" class="header__burger--hide" alt="burger-menu icon" height="20px">
-                </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li> <a href="../index.html" class="nav-link active header__nav--scroll">Inicio</a></li>
-                        <li> <a href="../index.html#nosotros" class="nav-link header__nav--scroll">Nosotros</a></li>
-                        <li> <a href="../index.html#servicios" class="nav-link header__nav--scroll">Servicios</a></li>
-                        <li> <a href="../index.html#trabajos" class="nav-link header__nav--scroll">Trabajos
-                                Realizados</a></li>
-                        <li> <a href="../index.html#clientes" class="nav-link header__nav--scroll">Clientes</a></li>
-                        <li> <a href="../index.html#articulos" class="nav-link header__nav--scroll">Articulos</a></li>
-                        <li> <a href="../index.html#contactos" class="nav-link header__nav--scroll">Contactos</a></li>
+                <button class="navbar-toggler navbar-dark bg-dark " type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="header__nav collapse navbar-collapse "  id="navbarToggler">
+                    <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"> <a href="../index.html" class="nav-link header__nav--scroll">Inicio</a></li>
+                        <li class="nav-item"> <a href="../index.html#nosotros" class="nav-link header__nav--scroll">Nosotros</a></li>
+                        <li class="nav-item"> <a href="../index.html#servicios" class="nav-link header__nav--scroll">Servicios</a></li>
+                        <li class="nav-item"> <a href="../index.html#trabajos" class="nav-link header__nav--scroll">Trabajos Realizados</a></li>
+                        <li class="nav-item"> <a href="../index.html#clientes" class="nav-link header__nav--scroll">Clientes</a></li>
+                        <li class="nav-item"> <a href="../index.html#articulos" class="nav-link header__nav--scroll">Articulos</a></li>
+                        <li class="nav-item"> <a href="../index.html#contactos" class="nav-link header__nav--scroll">Contactos</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="header__banner">
+            <div class="header__banner ">
                 <h1>GF AUTOMATION</h1>
                 <h2 class="text-white-50 mx-auto">Una empresa dedicada a la automatizacion industrial.</h2>
             </div>
