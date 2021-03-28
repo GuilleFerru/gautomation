@@ -8,24 +8,33 @@
         display: none;
     }
 
-    .header__logo {
-        background: $primary
-    }
-
-    .header__burger {
+    .fixedContainer{
+        grid-template-columns: 4fr 1fr;
+        background: $primary;
         display: flex;
+        
+        
+        
+        
+
     }
 
-    .header__form {
-        display: none;
-    }
 
-    .header__nav {
+    /*.header__logo {
+        background: $primary
+    }*/
+
+  /*  .header__burger {
+        display: flex;
+    }*/
+
+
+    /*.header__nav {
         display: none;
-    }
+    }*/
 
     .header__banner {
-        width: 100vw;
+        width: auto;
         height: 50vh;
         top: 0;
     }
