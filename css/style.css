@@ -197,13 +197,6 @@ nav {
     margin-left: auto;
     margin-right: auto; }
 
-.header__burger {
-  display: none;
-  grid-area: burger;
-  justify-content: center;
-  align-items: center;
-  padding: 10px; }
-
 .container__background {
   background-image: url("../media/fondo-web.png"); }
 
@@ -279,20 +272,12 @@ section#trabajos {
   grid-area: trabajos;
   padding-top: 140px; }
 
-/* CLIENTES */
-section#clientes {
-  grid-area: clientes;
-  padding-top: 140px; }
-
-#clientes .sectionContainer {
-  grid-area: sectionContainer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#clientes .sectionContainer .sectionContainer__item .texto {
-  padding: 0; }
+object {
+  width: 1050px;
+  height: 600px; }
+  object iframe {
+    width: 100%;
+    height: 100%; }
 
 /*ARTICULOS*/
 section#articulos {
@@ -323,12 +308,6 @@ section#articulos {
 footer {
   background-color: #000000;
   grid-area: footer; }
-
-.burger {
-  grid-area: burger;
-  display: none;
-  justify-content: center;
-  align-items: center; }
 
 .button__whatsapp {
   display: flex;
@@ -394,13 +373,14 @@ footer {
     font-size: 1em; }
   #queHacemos .img img {
     width: 50vh; }
-  section#nosotros {
-    padding-top: 0; }
   .containerNosotros {
     flex-wrap: wrap; }
-  article#certificaciones {
-    flex-wrap: wrap;
-    justify-content: center; }
+  object {
+    width: 100%;
+    height: 300px; }
+    object iframe {
+      width: 100%;
+      height: 100%; }
   .sectionContainer {
     flex-wrap: wrap; }
   .button__whatsapp {
